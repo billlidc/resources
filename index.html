@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Hub</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="window">
+        <div class="toolbar">
+            <div class="window-title">Document Hub</div>
+        </div>
+
+        <div class="content" style="display: flex; height: 100%;">
+            <div class="sidebar">
+                <div onclick="showDocuments('cheatsheets')">Cheatsheets</div>
+                <!-- <div onclick="showDocuments('title2')">Title 2</div> -->
+                <!-- Add more titles as needed -->
+
+
+
+            </div>
+
+            <div class="file-explorer">
+
+                <div id="cheatsheets" class="document-list">
+                    <h3>Cheatsheets</h3>
+                    <ul>
+                        <li><a href="https://leeklee0427.github.io/academics/applied-econometrics/Econometrics_Summary.pdf">Applied Econometrics</a></li>
+                        <!-- <li><a href="https://example.com/title1/document2">Document 2</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- Add more titles and documents as needed -->
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function showDocuments(titleId) {
+            var lists = document.getElementsByClassName('document-list');
+            for (var i = 0; i < lists.length; i++) {
+                lists[i].style.display = 'none';
+            }
+
+            var selectedList = document.getElementById(titleId);
+            if (selectedList) {
+                selectedList.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
