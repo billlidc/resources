@@ -1,2 +1,2 @@
-# documents
-My repository for dynamic document management
+# resources
+My repository hosting the webpage of resources
