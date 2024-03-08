@@ -24,6 +24,8 @@ body, html {
 .window-title {
     flex-grow: 1;
     text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .sidebar {
